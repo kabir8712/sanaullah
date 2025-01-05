@@ -1,0 +1,25 @@
+<div *ngIf="isOpen" class="md:hidden">
+    <nav class="fixed inset-0 bg-white z-50">
+      <div class="p-4 flex justify-end">
+        <button (click)="toggle()" class="text-gray-700">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="px-4 pt-4 pb-8 space-y-4">
+        <!-- <a href="#" class="block py-2 text-lg text-gray-700 hover:text-blue-600">Home</a>
+        <a href="#" class="block py-2 text-lg text-gray-700 hover:text-blue-600">Products</a>
+        <a href="#" class="block py-2 text-lg text-gray-700 hover:text-blue-600">About</a>
+        <a href="#" class="block py-2 text-lg text-gray-700 hover:text-blue-600">Contact</a> -->
+
+       
+            <a class="block py-2 text-lg text-gray-700 hover:text-blue-600" routerLink="/">Home</a>
+            <a class="block py-2 text-lg text-gray-700 hover:text-blue-600" routerLink="product">Products</a>
+            <a class="block py-2 text-lg text-gray-700 hover:text-blue-600" routerLink="about">About</a>
+            <a class="block py-2 text-lg text-gray-700 hover:text-blue-600" routerLink="testinomial">Testinomial</a>
+            <a class="block py-2 text-lg text-gray-700 hover:text-blue-600" routerLink="contact">Contact</a>
+          
+      </div>
+    </nav>
+  </div>
