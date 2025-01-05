@@ -15,6 +15,8 @@ import { FooterComponent } from './footer/footer.component';
 import { SocialLinksComponent } from './footer/social-links/social-links.component';
 import { NewsletterComponent } from './footer/newsletter/newsletter.component';
 import { FooterLinkComponent } from './footer/footer-link/footer-link.component';
+// import { ContactFormComponent } from './contact/contact-form/contact-form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,11 +32,12 @@ import { FooterLinkComponent } from './footer/footer-link/footer-link.component'
     FooterComponent,
     SocialLinksComponent,
     NewsletterComponent,
-    FooterLinkComponent
+    FooterLinkComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
